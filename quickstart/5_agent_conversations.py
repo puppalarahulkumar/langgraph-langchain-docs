@@ -80,13 +80,7 @@ response = agent.invoke(
 )
 
 print(response['structured_response'])
-# ResponseFormat(
-#     punny_response="Florida is still having a 'sun-derful' day! The sunshine is playing 'ray-dio' hits all day long! I'd say it's the perfect weather for some 'solar-bration'! If you were hoping for rain, I'm afraid that idea is all 'washed up' - the forecast remains 'clear-ly' brilliant!",
-#     weather_conditions="It's always sunny in Florida!"
-# )
 
-
-# Note that we can continue the conversation using the same `thread_id`.
 response = agent.invoke(
     {"messages": [{"role": "user", "content": "thank you!"}]},
     config=config,
@@ -94,7 +88,3 @@ response = agent.invoke(
 )
 
 print(response['structured_response'])
-# ResponseFormat(
-#     punny_response="You're 'thund-erfully' welcome! It's always a 'breeze' to help you stay 'current' with the weather. I'm just 'cloud'-ing around waiting to 'shower' you with more forecasts whenever you need them. Have a 'sun-sational' day in the Florida sunshine!",
-#     weather_conditions=None
-# )
